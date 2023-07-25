@@ -54,7 +54,9 @@
 ## Data flow, prepare 2 - 3 data flow diagram (example: when user client some buttons to upload some files, what happens next, how does request go through your services)
 ![image](https://github.com/bestHenryJ/antra_projects/assets/130790693/98cbcbd9-691f-4793-bbc9-497f467cec3f)
 ## message queue
-- AWS SQS
+- AWS SQS: applying for async processing, paymentService and invoiceService as individual service are not require to complete the whole process in real time and could not block other service and improve efficiency and reliability.
+  - create queue between orderService and invoiceService: After orderService generate a order and send a message to queue(topic 1), invoiceServie will fetch a message and process message from queue according to its processing ability.
+  - create queue between invoiceService and paymentService: After invoiceService generate a invoice and send a message to queue(topic 2), paymentServie will fetch a message and process payment from queue.
 ## biggest challenge(technical challenge)
 ## Aws
 - S3
