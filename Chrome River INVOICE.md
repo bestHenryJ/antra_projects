@@ -16,7 +16,13 @@
 - retrieval invoices and produce report
 - match and approve invoices
 ## database schema (tables)
+- users
+- roles
+- invoices
+- orders
+- invoices_category
 ## high level design (microservice architecture) and provide module pictures
+![image](https://github.com/bestHenryJ/antra_projects/assets/130790693/7be3f88b-b933-4ca5-8512-461482211ee5)
 ## rest api design (design 2 - 4 rest apis)
 ## Data flow, prepare 2 - 3 data flow diagram (example: when user client some buttons to upload some files, what happens next, how does request go through your services)
 ## message queue
