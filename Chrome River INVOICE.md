@@ -59,8 +59,8 @@
   - create queue between invoiceService and paymentService: After invoiceService generate a invoice and send a message to queue(topic 2), paymentServie will fetch a message and process payment from queue.
 ## biggest challenge(technical challenge)
 ## Aws
-- S3
-- RDS
+- S3: store bulk product photo or video in S3.
+- RDS: deploy MySQL database in RDS.
 ## Prepare stories based on your resume: example,  where did you use multi-threading in your last project? Where did you use builder design patterns in your last project?
 ## Come up team size(if you are the leader, how many people do you need and their responsibilities)
 ## Design a ci/cd pipeline flow to (AWS / local) depends on your resume project(if you want to keep AWS)
