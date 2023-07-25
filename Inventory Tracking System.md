@@ -1,8 +1,11 @@
-# Chrome River INVOICE
+# Inventory Tracking System
 ## Overview
 
 ### Features
-
+- Automate
+- saving cost
+- less error
+- 
 ### Functionalities
 
 ## database schema (tables)
