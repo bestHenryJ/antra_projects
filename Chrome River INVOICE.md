@@ -1,5 +1,6 @@
-# Invoice management
-## features / functionalities  / system purpos + overview
+# Chrome River INVOICE
+## Overview
+### 
 ## database schema (tables)
 ## high level design (microservice architecture) and provide module pictures
 ## rest api design (design 2 - 4 rest apis)
