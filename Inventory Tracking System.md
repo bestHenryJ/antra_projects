@@ -1,6 +1,6 @@
 # Inventory Tracking System
 ## Overview
-- Inventory Tracking System project, which involved computerization of entire warehouse to maintain all operations and transactions pertaining to the inventory online. It would keep track of the entire inventory information which was currently manufactured and stored.
+- Inventory Tracking System involved computerization of entire warehouse to maintain all operations and transactions pertaining to the inventory online. It would keep track of the entire inventory information which was currently manufactured and stored.
 ### Features
 - reduced costs
 - enables automation
