@@ -24,6 +24,33 @@
 ## high level design (microservice architecture) and provide module pictures
 ![image](https://github.com/bestHenryJ/antra_projects/assets/130790693/7be3f88b-b933-4ca5-8512-461482211ee5)
 ## rest api design (design 2 - 4 rest apis)
+```
+	@PutMapping(value = "/invoice/update")
+	public ResponseEntity<InvoiceDTO> updateInvoice(@RequestBody InvoiceDTO in) {
+		return new ResponseEntity<InvoiceDTO>(invoiceService.updateInvoice(in), Http.status.Ok);
+	}
+```
+```
+	@GetMapping(value = "/invoices")
+	public ResponseEntity<List<InvoiceDTO>> getInvoice() {
+
+		return new ResponseEntity<InvoiceDTO>(invoiceService.getInvoices(), Http.status.Ok);
+	}
+```
+```
+	@GetMapping(value = "/order/{id}")
+	public ResponseEntity<InvoiceDTO> getInvoiceById(@PathVariable long id) {
+
+		return new ResponseEntity<InvoiceDTO>(invoiceService.getInvoiceById(id), Http.status.Ok);
+	}
+```
+```
+	@PostMapping(value = "/order")
+	public ResponseEntity<InvoiceDTO> createInvoice(@RequestBody InvoiceDTO invoiceDTO) {
+
+		return new ResponseEntity<InvoiceDTO>(invoiceService.createInvoice(invoiceDTO), Http.status.Create);
+	}
+```
 ## Data flow, prepare 2 - 3 data flow diagram (example: when user client some buttons to upload some files, what happens next, how does request go through your services)
 ## message queue
 ## biggest challenge(technical challenge)
