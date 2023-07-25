@@ -2,7 +2,19 @@
 ## Overview
 - Chrome River INVOICE help buyer and seller to generate a a mutually understandable and govern standard format invoice. Its automatic process and modern UI could extremely simplified manual operations. When electronic invoicing systems are set up properly, they can help companies to cut costs, reduce turnover, and make better use of data.
 ### Features
+- simple archiving
+- Faster and More Convenient Payments
+- reduced costs
+- enables automation
+- reduced turnover/errors
 ### Functionalities
+- register
+- login/logout
+- create orders
+- generate invoices
+- store invoices and orders info
+- retrieval invoices and produce report
+- match and approve invoices
 ## database schema (tables)
 ## high level design (microservice architecture) and provide module pictures
 ## rest api design (design 2 - 4 rest apis)
