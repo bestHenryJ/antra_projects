@@ -70,6 +70,18 @@
 - backend developer
 - de-ops
 ## Design a ci/cd pipeline flow to (AWS / local) depends on your resume project(if you want to keep AWS)
+- tool: Jenkins
+- source reviewer
+- build
+  - compile source & dependencies
+  - run unit tests
+  - code coverage
+- test environment
+  - run integration tests
+- prod environment
+  - Errors, latency, pressure test
+- deploy
+  - AWS or docker
 ## monitor in project
 - Jira
 ## daily user / TPS / QPS
