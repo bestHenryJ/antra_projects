@@ -63,6 +63,7 @@
 - S3: store bulk product photo or video in S3.
 - RDS: deploy MySQL database in RDS.
 ## Prepare stories based on your resume: example,  where did you use multi-threading in your last project? Where did you use builder design patterns in your last project?
+- Implement JWT tokens
 ## Come up team size(if you are the leader, how many people do you need and their responsibilities)
 - size 5 ~ 6
 - project manager
@@ -88,5 +89,7 @@
 ## daily user / TPS / QPS
 ## frontend story
 ### Implement
+- Angular & bootstrap
 ### challenge
+- slow page loading
 ### story
