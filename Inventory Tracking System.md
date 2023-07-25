@@ -15,8 +15,15 @@
 - products management(CRUD)
 - balance inventory
 ## database schema (tables)
-
+- user
+- role
+- product
+- category
+- order
+- inventory
+- store
 ## high level design (microservice architecture) and provide module pictures
+![image](https://github.com/bestHenryJ/antra_projects/assets/130790693/99fa6ae0-eb74-43ac-8a17-81526a7abede)
 
 ## rest api design (design 2 - 4 rest apis)
 
