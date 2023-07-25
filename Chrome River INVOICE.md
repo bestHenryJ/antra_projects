@@ -63,6 +63,12 @@
 - RDS: deploy MySQL database in RDS.
 ## Prepare stories based on your resume: example,  where did you use multi-threading in your last project? Where did you use builder design patterns in your last project?
 ## Come up team size(if you are the leader, how many people do you need and their responsibilities)
+- size 5 ~ 6
+- project manager
+- team leader/scrum master
+- frontend developer
+- backend developer
+- de-ops
 ## Design a ci/cd pipeline flow to (AWS / local) depends on your resume project(if you want to keep AWS)
 ## monitor in project
 - Jira
