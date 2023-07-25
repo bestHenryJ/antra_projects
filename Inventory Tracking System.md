@@ -23,8 +23,7 @@
 - inventory
 - store
 ## high level design (microservice architecture) and provide module pictures
-![image](https://github.com/bestHenryJ/antra_projects/assets/130790693/99fa6ae0-eb74-43ac-8a17-81526a7abede)
-
+![image](https://github.com/bestHenryJ/antra_projects/assets/130790693/3c442aca-8c86-4e81-ae69-50a24ed9fdd2)
 ## rest api design (design 2 - 4 rest apis)
 
 ## Data flow, prepare 2 - 3 data flow diagram (example: when user client some buttons to upload some files, what happens next, how does request go through your services)
