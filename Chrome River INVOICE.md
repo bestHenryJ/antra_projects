@@ -58,6 +58,7 @@
   - create queue between orderService and invoiceService: After orderService generate a order and send a message to queue(topic 1), invoiceServie will fetch a message and process message from queue according to its processing ability.
   - create queue between invoiceService and paymentService: After invoiceService generate a invoice and send a message to queue(topic 2), paymentServie will fetch a message and process payment from queue.
 ## biggest challenge(technical challenge)
+- Implement microservice component automate is kind of difficult. For each component we must follow the stages of Build, Deploy and, Monitor. Debugging is difficult to find out each service for an error. It is essential to maintain centralized logging and dashboards to debug problems.
 ## Aws
 - S3: store bulk product photo or video in S3.
 - RDS: deploy MySQL database in RDS.
