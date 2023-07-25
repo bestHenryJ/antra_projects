@@ -8,7 +8,12 @@
 - persistent archiving
 - simple use
 ### Functionalities
-
+- register
+- login/logout
+- retrieval products
+- create orders
+- products management(CRUD)
+- balance inventory
 ## database schema (tables)
 
 ## high level design (microservice architecture) and provide module pictures
