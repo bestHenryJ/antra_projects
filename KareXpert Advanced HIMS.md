@@ -92,5 +92,7 @@
 ## daily user / TPS / QPS
 ## frontend story
 ### Implement
+- Angular & bootstrap
 ### challenge
+
 ### story
