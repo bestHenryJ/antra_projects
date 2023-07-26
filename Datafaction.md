@@ -10,16 +10,22 @@
 - Multi-client entity management
 - Investment integration
 ### Functionalities
-
+- investment management
+- revenue management
+- Bill management
+- report
+- predication
 ## database schema (tables)
-
-## high level design (microservice architecture) and provide module pictures
-
+- investment
+- income
+- expense
+- statement
+- company
+- user
+- company_type
 ## rest api design (design 2 - 4 rest apis)
 
 ## Data flow, prepare 2 - 3 data flow diagram (example: when user client some buttons to upload some files, what happens next, how does request go through your services)
-
-## message queue
 
 ## biggest challenge(technical challenge)
 ## Aws
