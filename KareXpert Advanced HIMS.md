@@ -64,9 +64,14 @@
 ![image](https://github.com/bestHenryJ/antra_projects/assets/130790693/736d8a79-0335-4fac-b5eb-732b960d1b00)
 ## biggest challenge(technical challenge)
 - implement dynamic database source swith based on SAAS platform
+  - Base on SAAS platform, my strategy is to use independent database to implement hospital resouce management.
+  - super admin is required to add new client(hospital) and guarantee database connecting currectly.
+  - super admin mannully add database info like url, username, root, schema... for a hospital.
+  - implement SAAS upgrade and data isolation.
 ## Docker
 
 ## Prepare stories based on your resume: example,  where did you use multi-threading in your last project? Where did you use builder design patterns in your last project?
+- builder design patterns
 ## Come up team size(if you are the leader, how many people do you need and their responsibilities)
 - size 5 ~ 6
 - project manager
