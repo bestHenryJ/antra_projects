@@ -1,9 +1,22 @@
 # KareXpert Advanced HIMS
 ## Overview
-
+- KareXpert is fully integrated Digital Healthcare Platform, a SaaS-based offering, will enable hospitals to achieve end-to-end automation of their patient journeys and provide the best patient treatment experience.
 ### Features
-
+- This application helps in management of Patients, doctors, admin in a easy and comfortable way.
+- using this Application patients can quickly Sign up, Login, view his/her profile, view doctors, book Appointment, view Report, choose doctor, view Appointments, give feedback, pay online and logout.
+- Admin can add Doctors,view patients list, view Doctors list,remove doctors, see feedback given by patients,view reports,logout.Doctor can login, view profile, viewAppointments, Attend Patients and logout.
 ### Functionalities
+- login
+- Admin’s DashBoard
+- hospital's DashBoard
+- Patient’s DashBoard
+- Doctor’s DashBoard
+- Report-Table
+- Appointment-Table
+- Feedback Form
+- Booking Appointment
+- Choosing Doctor
+- Payment Process
 
 ## database schema (tables)
 
