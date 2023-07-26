@@ -19,7 +19,13 @@
 - Payment Process
 
 ## database schema (tables)
-
+- user
+- hospital
+- patient
+- doctor
+- appointment
+- report
+- feedback
 ## high level design (microservice architecture) and provide module pictures
 
 ## rest api design (design 2 - 4 rest apis)
