@@ -39,16 +39,16 @@
 ```
 ```
 	@GetMapping(value = "/order/{id}")
-	public ResponseEntity<InvoiceDTO> getInvoiceById(@PathVariable long id) {
+	public ResponseEntity<OrderDTO> getInvoiceById(@PathVariable long id) {
 
-		return new ResponseEntity<InvoiceDTO>(invoiceService.getInvoiceById(id), Http.status.Ok);
+		return new ResponseEntity<OrderDTO>(invoiceService.getOrderById(id), Http.status.Ok);
 	}
 ```
 ```
 	@PostMapping(value = "/order")
-	public ResponseEntity<InvoiceDTO> createInvoice(@RequestBody InvoiceDTO invoiceDTO) {
+	public ResponseEntity<OrderDTO> createInvoice(@RequestBody OrderDTO orderDTO) {
 
-		return new ResponseEntity<InvoiceDTO>(invoiceService.createInvoice(invoiceDTO), Http.status.Create);
+		return new ResponseEntity<OrderDTO>(invoiceService.createInvoice(orderDTO), Http.status.Create);
 	}
 ```
 ## Data flow, prepare 2 - 3 data flow diagram (example: when user client some buttons to upload some files, what happens next, how does request go through your services)
