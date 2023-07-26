@@ -27,7 +27,39 @@
 - report
 - feedback
 ## rest api design (design 2 - 4 rest apis)
-
+```
+    @GetMapping
+    public ResponseEntity<List<Doctor>> getDoctors() {
+        List<Doctor> doctors = doctorService.findAll();
+        return ResponseEntity.ok(doctors);
+    }
+```
+```
+    @GetMapping("/{id}")
+    public ResponseEntity<?> getPaientById(@PathVariable Long id) {
+        String notFoundMessage = getNotFoundMessage(id);
+        Patient patient = patientService.findById(id)
+                .orElseThrow(() -> new ResourceNotFoundException(notFoundMessage));
+        return ResponseEntity.ok(patient);
+    }
+```
+```
+    @PostMapping
+    public ResponseEntity<Patient> addEmployee(@RequestBody Patient patient) {
+        Patient newPatient = PatientService.save(patient);
+        return new ResponseEntity<>(newPatient, HttpStatus.CREATED);
+    }
+```
+```
+    @PutMapping("/{id}")
+    public ResponseEntity<Patient> updateEmployeeById(@PathVariable  Long id,
+                                                       @RequestBody Patient patient) {
+        String notFoundMessage = getNotFoundMessage(id);
+        Patient updatePatient = patientService.update(id, patient)
+                .orElseThrow(() -> new ResourceNotFoundException(notFoundMessage));
+        return ResponseEntity.ok(updatePatient);
+    }
+```
 ## Data flow, prepare 2 - 3 data flow diagram (example: when user client some buttons to upload some files, what happens next, how does request go through your services)
 
 ## biggest challenge(technical challenge)
