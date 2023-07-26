@@ -64,6 +64,8 @@
 - S3: store amount of products' information like photo or video.
 - RDS: deploy Oracle database in RDS
 ## Prepare stories based on your resume: example,  where did you use multi-threading in your last project? Where did you use builder design patterns in your last project?
+### multi-threading
+### Singlton patterns
 ## Come up team size(if you are the leader, how many people do you need and their responsibilities)
 - size 5 ~ 6
 - project manager
