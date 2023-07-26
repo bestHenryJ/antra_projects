@@ -59,8 +59,7 @@
 ![image](https://github.com/bestHenryJ/antra_projects/assets/130790693/7496c3a3-92d2-4b16-94db-d1f25ce244e2)
 
 ## biggest challenge(technical challenge)
-## Aws
-
+- 
 ## Prepare stories based on your resume: example,  where did you use multi-threading in your last project? Where did you use builder design patterns in your last project?
 ## Come up team size(if you are the leader, how many people do you need and their responsibilities)
 
