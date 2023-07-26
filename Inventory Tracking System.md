@@ -58,8 +58,11 @@
   - create queue between OrderService and InventoryService
   - create queue between SupplyService and InventoryService 
 ## biggest challenge(technical challenge)
+- speed up retrieval in database layer
 ## Aws
-
+- EC2: configure cpu, memory storage and OS.
+- S3: store amount of products' information like photo or video.
+- RDS: deploy Oracle database in RDS
 ## Prepare stories based on your resume: example,  where did you use multi-threading in your last project? Where did you use builder design patterns in your last project?
 ## Come up team size(if you are the leader, how many people do you need and their responsibilities)
 - size 5 ~ 6
