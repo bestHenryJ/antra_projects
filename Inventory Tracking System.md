@@ -34,21 +34,20 @@
 ```
 	@PutMapping(value = "/inverntory/order/{id}")
 	public ResponseEntity<String> updateInventoryByOrder(@PathVariable long id) {
-    inventoryService.updateInventoryByOrder(id);
+		inventoryService.updateInventoryByOrder(id);
 		return new ResponseEntity<InvoiceDTO>("Inventory is up to date!", Http.status.Ok);
 	}
 ```
 ```
 	@PutMapping(value = "/inverntory/store/{id}")
 	public ResponseEntity<String> updateInventoryByStore(@PathVariable long id) {
-    inventoryService.updateInventoryByStore(id);
+    		inventoryService.updateInventoryByStore(id);
 		return new ResponseEntity<InvoiceDTO>("Inventory is up to date!", Http.status.Ok);
 	}
 ```
 ```
 	@DeleteMapping(value = "/product/{id}")
 	public ResponseEntity<ProductDTO> deleteProduct(@PathVariable long id) {
-
 		return new ResponseEntity<ProductDTO>(inventoryService.deleteProductById(id), Http.status.Ok);
 	}
 ```
