@@ -61,7 +61,7 @@
     }
 ```
 ## Data flow, prepare 2 - 3 data flow diagram (example: when user client some buttons to upload some files, what happens next, how does request go through your services)
-
+![image](https://github.com/bestHenryJ/antra_projects/assets/130790693/736d8a79-0335-4fac-b5eb-732b960d1b00)
 ## biggest challenge(technical challenge)
 - implement dynamic database source swith based on SAAS platform
 ## Docker
