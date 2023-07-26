@@ -26,6 +26,7 @@
 ## rest api design (design 2 - 4 rest apis)
 
 ## Data flow, prepare 2 - 3 data flow diagram (example: when user client some buttons to upload some files, what happens next, how does request go through your services)
+![image](https://github.com/bestHenryJ/antra_projects/assets/130790693/7496c3a3-92d2-4b16-94db-d1f25ce244e2)
 
 ## biggest challenge(technical challenge)
 ## Aws
