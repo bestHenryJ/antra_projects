@@ -52,7 +52,7 @@
 	}
 ```
 ## Data flow, prepare 2 - 3 data flow diagram (example: when user client some buttons to upload some files, what happens next, how does request go through your services)
-
+![image](https://github.com/bestHenryJ/antra_projects/assets/130790693/854272a6-a2e9-4940-8315-e048f59aca51)
 ## message queue
 
 ## biggest challenge(technical challenge)
