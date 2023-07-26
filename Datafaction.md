@@ -2,7 +2,13 @@
 ## Overview
 - Datafaction provides scale, control and security to family offices, business managers and sport management firms that offer bill pay and accounting services. The specialized multi-entity accounting and secure bill payment solution incorporates approval workflow, integration with City National Bank, document management and investment data integration.
 ### Features
-
+- General ledger
+- Accounts payable
+- Accounts receivable
+- Data integration
+- Bill pay
+- Multi-client entity management
+- Investment integration
 ### Functionalities
 
 ## database schema (tables)
