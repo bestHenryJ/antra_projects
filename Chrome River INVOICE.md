@@ -94,3 +94,4 @@
 ### challenge
 - slow page loading
 ### story
+- Use OnPush change detection strategy: Angular's default change detection strategy is not always the most performant. The OnPush change detection strategy allows Angular to check for changes only when the input reference to a component changes. This approach can save a lot of performance overhead, especially for complex applications.
