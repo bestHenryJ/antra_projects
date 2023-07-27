@@ -88,3 +88,5 @@
 ### Implement
 ### challenge
 ### story
+- Lazy loading: Lazy loading is a technique used to load only the required code for a specific route, instead of loading the entire application upfront. I apply it to reduce the initial loading time and improve the perceived performance of your application.
+- Minimize HTTP requests: Minimizing the number of HTTP requests required to load your application can significantly improve the performance of your application. I achieved this by concatenating and minifying your CSS and JavaScript files, using a CDN, and caching resources.
