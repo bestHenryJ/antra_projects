@@ -101,3 +101,4 @@
 ### challenge
 
 ### story
+- End-to-end testing: This involves testing the entire application, including its user interface and all the back-end components. I used the Protractor testing framework to implement End-to-end testing for testing the application's overall functionality and ensuring that all components work together correctly.
