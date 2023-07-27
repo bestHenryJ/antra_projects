@@ -88,6 +88,7 @@
 ## monitor in project
 - Jira
 ## daily user / TPS / QPS
+- max-connections + accept-count
 ## frontend story
 ### Implement
 ### challenge
