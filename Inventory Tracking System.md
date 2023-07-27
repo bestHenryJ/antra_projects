@@ -58,7 +58,7 @@
   - create queue between OrderService and InventoryService
   - create queue between SupplyService and InventoryService 
 ## biggest challenge(technical challenge)
-- speed up retrieval in database layer
+- speed up retrieval in database layer: set up index and change excution plan
 ## Aws
 - EC2: configure cpu, memory storage and OS.
 - S3: store amount of products' information like photo or video.
