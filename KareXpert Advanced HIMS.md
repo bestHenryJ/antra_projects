@@ -71,7 +71,7 @@
 ## Docker
 
 ## Prepare stories based on your resume: example,  where did you use multi-threading in your last project? Where did you use builder design patterns in your last project?
-- builder design patterns
+- builder design patterns: I can use this pattern to build the response entity object when we use ResponseEntity in RestControllers. If the response entity has more parameters, the builder pattern can be used to avoid using telescopic constructors. Here I created a response entity class which is called ApiResponse and I will use the builder pattern to create this class.
 ## Come up team size(if you are the leader, how many people do you need and their responsibilities)
 - size 5 ~ 6
 - project manager
