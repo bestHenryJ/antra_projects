@@ -19,7 +19,7 @@
 - role (id, user_role)
 - category (id, product_category)
 - order (id, user_id, product_id, count)
-- product (id, name, description, inventory)
+- product (id, name, description, inventory, category)
 - supply (id, user_id, product_id, count)
 ## high level design (microservice architecture) and provide module pictures
 ![image](https://github.com/bestHenryJ/antra_projects/assets/130790693/3c442aca-8c86-4e81-ae69-50a24ed9fdd2)
