@@ -64,7 +64,7 @@
   - create queue between InventroyService and PaymentService
 ## biggest challenge(technical challenge)
 - speed up retrieval in database layer:
-  - set up index and change excution plan
+  - set up index and change execution plan
 - debug and maintain microservice:
   - Implement microservice component automate is kind of difficult. For each component we must follow the stages of Build, Deploy and, Monitor. Debugging is difficult to find out each service for an error. It is essential to maintain centralized logging and dashboards to debug problems.
 ## Aws
