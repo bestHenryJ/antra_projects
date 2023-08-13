@@ -27,19 +27,39 @@
 <img width="958" alt="屏幕快照 2023-08-13 上午8 07 39的副本 2" src="https://github.com/bestHenryJ/antra_projects/assets/130790693/eabc03c6-6113-4fbf-8ba5-2aa010a22c63">
 
 ## rest api design (design 2 - 4 rest apis)
+- orderService
+```
+	@GetMapping("/order/{id}")
+    	public ResponseEntity<?> getPaientById(@PathVariable Long id) {
+        	String notFoundMessage = getNotFoundMessage(id);
+        	orderDTO order = orderService.findById(id)
+                	.orElseThrow(() -> new ResourceNotFoundException(notFoundMessage));
+        	return ResponseEntity.ok(order);
+    	}
+```
 ```
 	@PostMapping(value = "/order")
 	public ResponseEntity<OrderDTO> createOrder(@RequestBody OrderDTO orderDTO) {
 		return new ResponseEntity<orderDTO>(orderService.createOrder(orderDTO), Http.status.Create);
 	}
 ```
+- supplyService
 ```
-	@PutMapping(value = "/inverntory/order/{id}")
-	public ResponseEntity<String> updateInventoryByOrder(@PathVariable long id) {
-		inventoryService.updateInventoryByOrder(id);
-		return new ResponseEntity<String>("Inventory is up to date!", Http.status.Ok);
+    	@GetMapping("/supply/{id}")
+    	public ResponseEntity<?> getPaientById(@PathVariable Long id) {
+        	String notFoundMessage = getNotFoundMessage(id);
+        	orderDTO order = orderService.findById(id)
+                	.orElseThrow(() -> new ResourceNotFoundException(notFoundMessage));
+        	return ResponseEntity.ok(order);
+    	}
+```
+```
+	@DeleteMapping(value = "/supply/{id}")
+	public ResponseEntity<OrderDTO> createOrder(@RequestBody OrderDTO orderDTO) {
+		return new ResponseEntity<orderDTO>(orderService.createOrder(orderDTO), Http.status.Create);
 	}
 ```
+- inventoryService
 ```
 	@PutMapping(value = "/inverntory/supply/{id}")
 	public ResponseEntity<String> updateInventoryBySupply(@PathVariable long id) {
@@ -51,6 +71,16 @@
 	@DeleteMapping(value = "/product/{id}")
 	public ResponseEntity<ProductDTO> deleteProduct(@PathVariable long id) {
 		return new ResponseEntity<ProductDTO>(inventoryService.deleteProductById(id), Http.status.Ok);
+	}
+```
+```
+	@PutMapping(value = "/inverntory/order/{id}")
+	public ResponseEntity<Patient> updateInventoryByOrder(@PathVariable  Long id,
+                                                          @RequestBody orderDto order) {
+	        String notFoundMessage = getNotFoundMessage(id);
+	        Patient updateInventory = inventoryService.update(id, order)
+	                .orElseThrow(() -> new ResourceNotFoundException(notFoundMessage));
+	        return ResponseEntity.ok(updateInventory);
 	}
 ```
 ## Data flow, prepare 2 - 3 data flow diagram (example: when user client some buttons to upload some files, what happens next, how does request go through your services)
