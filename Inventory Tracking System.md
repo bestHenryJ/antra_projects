@@ -143,18 +143,18 @@
 - add http request
 - generate aggregate report
 - report:
-  - simple             10000(5000 thread and 2 request per thread)
-  - average            203
-  - median             24  
-  - 90% line           671
-  - 95% line           1018
-  - 90% line           1091
-  - min                0
-  - maxinum            1057
-  - error%             0.0%
-  - throughput(QPS)    3423.5/sec
-  - received KB/s      561.67 kb/s
-  - send KB/s          702.8 kb/s
+  - simple-------------10000(5000 thread and 2 request per thread)
+  - average------------203
+  - median-------------24  
+  - 90% line-----------671
+  - 95% line-----------1018
+  - 90% line-----------1091
+  - min----------------0
+  - maxinum------------1057
+  - error%-------------0.0%
+  - throughput(QPS)----3423.5/sec
+  - received KB/s------561.67 kb/s
+  - send KB/s----------702.8 kb/s
 ## frontend story
 ### Implement
 - angular & bootstrap
