@@ -18,9 +18,9 @@
 - user (id, username, email, role)
 - role (id, user_role)
 - category (id, product_category)
-- order (id, user_id, product_id, count)
+- order (id, user_id, details)
 - product (id, name, description, inventory, category)
-- supply (id, user_id, product_id, count)
+- supply (id, user_id, details)
 - invoice (id, name, date, description, content, amount)
 ## high level design (microservice architecture) and provide module pictures
 
