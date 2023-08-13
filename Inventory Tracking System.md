@@ -36,14 +36,14 @@
 	@PutMapping(value = "/inverntory/order/{id}")
 	public ResponseEntity<String> updateInventoryByOrder(@PathVariable long id) {
 		inventoryService.updateInventoryByOrder(id);
-		return new ResponseEntity<InvoiceDTO>("Inventory is up to date!", Http.status.Ok);
+		return new ResponseEntity<String>("Inventory is up to date!", Http.status.Ok);
 	}
 ```
 ```
 	@PutMapping(value = "/inverntory/supply/{id}")
 	public ResponseEntity<String> updateInventoryBySupply(@PathVariable long id) {
     		inventoryService.updateInventoryBySupply(id);
-		return new ResponseEntity<InvoiceDTO>("Inventory is up to date!", Http.status.Ok);
+		return new ResponseEntity<String>("Inventory is up to date!", Http.status.Ok);
 	}
 ```
 ```
