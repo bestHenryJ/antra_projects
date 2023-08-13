@@ -58,18 +58,24 @@
 <img width="1014" alt="屏幕快照 2023-08-13 上午10 34 57" src="https://github.com/bestHenryJ/antra_projects/assets/130790693/69cc1fc9-c132-4803-a858-8403ae5d9d64">
 
 ## message queue
-- AWS SQS
+- AWS SQS: applying for async processing, two service as individual service are not require to complete the whole process in real time and could not block other service and improve efficiency and reliability.
   - create queue between OrderService and InventoryService
-  - create queue between SupplyService and InventoryService 
+  - create queue between SupplyService and InventoryService
+  - create queue between InventroyService and PaymentService
 ## biggest challenge(technical challenge)
 - speed up retrieval in database layer: set up index and change excution plan
+- Implement microservice component automate is kind of difficult. For each component we must follow the stages of Build, Deploy and, Monitor. Debugging is difficult to find out each service for an error. It is essential to maintain centralized logging and dashboards to debug problems.
 ## Aws
 - EC2: configure cpu, memory storage and OS.
 - S3: store amount of products' information like photo or video.
 - RDS: deploy Oracle database in RDS
 ## Prepare stories based on your resume: example,  where did you use multi-threading in your last project? Where did you use builder design patterns in your last project?
-- multi-threading: I used it when I used restTemple API to call differet microservice and need the response to return to the user. It could extremely reduce the response time and improve recource usage rate.
-- builder design patterns: I can use this pattern to build the response entity object when we use ResponseEntity in RestControllers. If the response entity has more parameters, the builder pattern can be used to avoid using telescopic constructors. Here I created a response entity class which is called ApiResponse and I will use the builder pattern to create this class.
+- multi-threading:
+  - I used it when I used restTemple API to call differet microservice and need the response to return to the user. It could extremely reduce the response time and improve recource usage rate.
+- builder design patterns:
+  - I can use this pattern to build the response entity object when we use ResponseEntity in RestControllers. If the response entity has more parameters, the builder pattern can be used to avoid using telescopic constructors. Here I created a response entity class which is called ApiResponse and I will use the builder pattern to create this class.
+- Implement JWT tokens:
+  - use JWT tokens to implement user verification. Realize one time login and multi-times operation to improve user experience on response time and user security.
 ## Come up team size(if you are the leader, how many people do you need and their responsibilities)
 - size 5 ~ 6
 - project manager
