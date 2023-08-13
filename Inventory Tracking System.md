@@ -80,11 +80,11 @@
   - use JWT tokens to implement user verification. Realize one time login and multi-times operation to improve user experience on response time and user security.
 ## Come up team size(if you are the leader, how many people do you need and their responsibilities)
 - size 5 ~ 6
-- project manager
-- team leader/scrum master
-- frontend developer
-- backend developer
-- de-ops
+- project manager (monitor whole project progress)
+- team leader/scrum master (quality control and techique support)
+- frontend developer (UI/UX, frontend view engine developing, html, css, js)
+- backend developer (database, spring mvc，ORM(Hibernate))
+- de-ops (CI/CD)
 ## Design a ci/cd pipeline flow to (AWS / local) depends on your resume project(if you want to keep AWS)
 - tool: Jenkins
 - source reviewer
