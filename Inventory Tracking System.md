@@ -99,7 +99,12 @@
 - deploy
   - AWS or docker
 ## monitor in project
-- Jira
+-  tools: Jira
+-  create a plan or outline
+-  set goals and expectations
+-  use Jira to control timeline, cost and tickets to monitor project progress
+-  generate and evaluate reports
+-  make necessary improvements
 ## daily user / TPS / QPS
 - max-connections + accept-count
 ## frontend story
