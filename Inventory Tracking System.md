@@ -22,7 +22,9 @@
 - product (id, name, description, inventory, category)
 - supply (id, user_id, product_id, count)
 ## high level design (microservice architecture) and provide module pictures
+
 <img width="958" alt="屏幕快照 2023-08-13 上午8 07 39的副本 2" src="https://github.com/bestHenryJ/antra_projects/assets/130790693/eabc03c6-6113-4fbf-8ba5-2aa010a22c63">
+
 ## rest api design (design 2 - 4 rest apis)
 ```
 	@PostMapping(value = "/order")
