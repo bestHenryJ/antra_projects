@@ -95,7 +95,7 @@
 - max-connections + accept-count
 ## frontend story
 ### Implement
-- angular & bootscript
+- angular & bootstrap
 ### story
 - Use tokens for authorization: Use JSON Web Tokens (JWT) to implement authorization in this application. When a user logs in, my authentication service should generate a JWT and return it to the client. The client can then include this token in subsequent API requests to authenticate the user and authorize access to protected resources.
 - Lazy loading: Lazy loading is a technique used to load only the required code for a specific route, instead of loading the entire application upfront. I apply it to reduce the initial loading time and improve the perceived performance of your application.
