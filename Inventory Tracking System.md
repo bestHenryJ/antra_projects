@@ -55,6 +55,9 @@
 ```
 ## Data flow, prepare 2 - 3 data flow diagram (example: when user client some buttons to upload some files, what happens next, how does request go through your services)
 ![image](https://github.com/bestHenryJ/antra_projects/assets/130790693/854272a6-a2e9-4940-8315-e048f59aca51)
+
+<img width="1014" alt="屏幕快照 2023-08-13 上午10 34 57" src="https://github.com/bestHenryJ/antra_projects/assets/130790693/69cc1fc9-c132-4803-a858-8403ae5d9d64">
+
 ## message queue
 - AWS SQS
   - create queue between OrderService and InventoryService
