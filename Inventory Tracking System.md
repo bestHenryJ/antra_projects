@@ -30,7 +30,7 @@
 - orderService
 ```
 	@GetMapping("/order/{id}")
-    	public ResponseEntity<?> getPaientById(@PathVariable Long id) {
+    	public ResponseEntity<?> getOrderById(@PathVariable Long id) {
         	String notFoundMessage = getNotFoundMessage(id);
         	orderDTO order = orderService.findById(id)
                 	.orElseThrow(() -> new ResourceNotFoundException(notFoundMessage));
@@ -46,17 +46,17 @@
 - supplyService
 ```
     	@GetMapping("/supply/{id}")
-    	public ResponseEntity<?> getPaientById(@PathVariable Long id) {
+    	public ResponseEntity<?> getSupplyById(@PathVariable Long id) {
         	String notFoundMessage = getNotFoundMessage(id);
-        	orderDTO order = orderService.findById(id)
+        	supplyDTO supply = suppleService.findById(id)
                 	.orElseThrow(() -> new ResourceNotFoundException(notFoundMessage));
-        	return ResponseEntity.ok(order);
+        	return ResponseEntity.ok(supply);
     	}
 ```
 ```
 	@DeleteMapping(value = "/supply/{id}")
-	public ResponseEntity<OrderDTO> createOrder(@RequestBody OrderDTO orderDTO) {
-		return new ResponseEntity<orderDTO>(orderService.createOrder(orderDTO), Http.status.Create);
+	public ResponseEntity<SupplyDTO> createSupply(@RequestBody SupplyDTO supplyDTO) {
+		return new ResponseEntity<SupplyDTO>(orderService.createSupply(supplyDTO), Http.status.Create);
 	}
 ```
 - inventoryService
