@@ -150,11 +150,11 @@
   - 95% line-----------1018
   - 90% line-----------1091
   - min----------------0
-  - maxinum------------1057
+  - maxinum-----------1057
   - error%-------------0.0%
-  - throughput(QPS)----3423.5/sec
+  - throughput(QPS)---3423.5/sec
   - received KB/s------561.67 kb/s
-  - send KB/s----------702.8 kb/s
+  - send KB/s---------702.8 kb/s
 ## frontend story
 ### Implement
 - angular & bootstrap
