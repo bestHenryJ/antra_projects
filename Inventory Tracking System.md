@@ -15,7 +15,7 @@
 - products management(CRUD)
 - balance inventory
 ## database schema (tables)
-- user (id, username, email, role)
+- user (id, username, compay_name, email, password, role)
 - role (id, user_role)
 - category (id, product_category)
 - order (id, user_id, details)
