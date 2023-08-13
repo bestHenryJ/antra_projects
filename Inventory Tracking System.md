@@ -21,7 +21,6 @@
 - order (id, user_id, product_id, count)
 - product (id, name, description, inventory, category)
 - supply (id, user_id, product_id, count)
-- payment (id, user_id, payment_info)
 - invoice (id, name, date, description, content, amount)
 ## high level design (microservice architecture) and provide module pictures
 
