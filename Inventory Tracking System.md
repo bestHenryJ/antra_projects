@@ -90,7 +90,9 @@
 ## message queue
 - AWS SQS: applying for async processing, two service as individual service are not require to complete the whole process in real time and could not block other service and improve efficiency and reliability.
   - create queue between OrderService and InventoryService
+    - After orderService generate a order and send a message to queue(topic 1), InventoryService will fetch a message and process message from queue according to its processing ability.
   - create queue between SupplyService and InventoryService
+    - After orderService generate a supply and send a message to queue(topic 2), InventoryService will fetch a message and process message from queue according to its processing ability.
   - create queue between InventroyService and PaymentService
 ## biggest challenge(technical challenge)
 - speed up retrieval in database layer:
