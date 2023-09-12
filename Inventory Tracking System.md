@@ -24,7 +24,7 @@
 - invoice (id, name, date, description, content, amount)
 ## high level design (microservice architecture) and provide module pictures
 
-![warehouse](https://github.com/bestHenryJ/antra_projects/assets/130790693/c2e43cb7-2a82-4adb-b89a-3aab9a613a6e)
+![warehouse](https://github.com/bestHenryJ/antra_projects/assets/130790693/fcb21f29-8c9a-416f-b641-91b36f7fb4d0)
 
 
 ## rest api design (design 2 - 4 rest apis)
