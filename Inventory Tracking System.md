@@ -24,7 +24,8 @@
 - invoice (id, name, date, description, content, amount)
 ## high level design (microservice architecture) and provide module pictures
 
-<img width="958" alt="屏幕快照 2023-08-13 上午8 07 39的副本 2" src="https://github.com/bestHenryJ/antra_projects/assets/130790693/eabc03c6-6113-4fbf-8ba5-2aa010a22c63">
+![warehouse](https://github.com/bestHenryJ/antra_projects/assets/130790693/32efe6ac-37fe-4bc8-937c-0b7a55a7f6a5)
+
 
 ## rest api design (design 2 - 4 rest apis)
 - orderService
