@@ -86,7 +86,20 @@
 ```
 ## Data flow, prepare 2 - 3 data flow diagram (example: when user client some buttons to upload some files, what happens next, how does request go through your services)
 
-<img width="1014" alt="屏幕快照 2023-08-13 上午10 34 57" src="https://github.com/bestHenryJ/antra_projects/assets/130790693/69cc1fc9-c132-4803-a858-8403ae5d9d64">
+### Supplier
+
+![supplier](https://github.com/bestHenryJ/antra_projects/assets/130790693/78958946-6a9f-4545-9ab6-93d46cabd766)
+
+
+### Consumer
+
+![consumer](https://github.com/bestHenryJ/antra_projects/assets/130790693/45d3e663-43d2-400f-91dc-ab410cf9fe50)
+
+
+### Employee
+
+![employee](https://github.com/bestHenryJ/antra_projects/assets/130790693/81487315-3f25-4728-957d-22d543cf1203)
+
 
 ## message queue
 - AWS SQS: applying for async processing, two service as individual service are not require to complete the whole process in real time and could not block other service and improve efficiency and reliability.
