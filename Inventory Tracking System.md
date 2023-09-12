@@ -14,6 +14,7 @@
 - create orders
 - products management(CRUD)
 - balance inventory
+- generate report
 ## database schema (tables)
 - user (id, username, compay_name, email, password, role)
 - role (id, user_role)
