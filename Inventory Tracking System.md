@@ -135,6 +135,8 @@
 ## Aws
 - EC2: configure cpu, memory storage and OS.
 - S3: store amount of products' information like photo or video.
+- route53: like DNS to parse the url to ip address
+- API gateway: routing the message to send to the right service.
 - RDS: deploy Oracle database in RDS
 ## Prepare stories based on your resume: example,  where did you use multi-threading in your last project? Where did you use builder design patterns in your last project?
 - multi-threading:
