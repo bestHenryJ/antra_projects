@@ -161,23 +161,21 @@
 ## Design a ci/cd pipeline flow to (AWS / local) depends on your resume project(if you want to keep AWS)
 - tool: Jenkins
 - source reviewer
+- configure git hook/git merge 
 - build
   - compile source & dependencies
   - run unit tests
-  - code coverage
 - test environment
   - run integration tests
-- prod environment
   - Errors, latency, pressure test
+- report
+  - code coverage report
+  - security report
+- package dorcker image
 - deploy
-  - AWS or docker
+  - AWS
 ## monitor in project
--  tools: Jira
--  create a plan or outline
--  set goals and expectations
--  use Jira to control timeline, cost and tickets to monitor project progress
--  generate and evaluate reports
--  make necessary improvements
+
 ## daily user / TPS / QPS
 - max-connections + accept-count
 - tools: Jmeter
