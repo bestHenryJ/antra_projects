@@ -130,9 +130,11 @@
 ## biggest challenge(technical challenge)
 - Optimized data retrieval and storage.
   - For example, quailtyControlService frequently visits products_table to operate data validation. Frequent queries slow down api response. 
-  - set up index and change execution plan 
+  - set up index and change execution plan (change to hash_map storage) to speed up the query.
+  - data catche: used LRU strategy to store most frequnt data in catche to reduce the visit rate on products_table.
 - debug and maintain microservice:
   - Implement microservice component automate is kind of difficult. For each component we must follow the stages of Build, Deploy and, Monitor. Debugging is difficult to find out each service for an error. It is essential to maintain centralized logging and dashboards to debug problems.
+  - For example, implemented unique global transcation ID to tracing the error in microservice component's log.
 ## Aws
 - EC2: configure cpu, memory storage and OS.
 - S3: store amount of products' information like photo or video.
