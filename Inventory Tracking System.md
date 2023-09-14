@@ -42,18 +42,21 @@
 ## rest api design (design 2 - 4 rest apis)
 - ProductCheckinService
 ```
-    	@PostMapping(value = {"/login", "/signin"})
-    	public ResponseEntity<?> login(@RequestBody LoginDto loginDto) {
-        	String token = authService.login(loginDto);
-        	JWTAuthResponse jwtAuthResponse = new JWTAuthResponse();
-        	jwtAuthResponse.setAccessToken(token);
-        	return ResponseEntity.ok(jwtAuthResponse);
+    	@GetMapping(value = {"/supplier/{id}"})
+    	public ResponseEntity<?> getSupplier(@PathVariable long id) {
+		SupplierDto supplierDto = ProductCheckinService.findSupplierById(id)
+	                .orElseThrow(() -> new ResourceNotFoundException(notFoundMessage))
+        	return new ResponseEntity<?>(supplierDto, Http.status.ok);
     	}
 ```
 ```
-    	@PostMapping(value = {"/register", "/signup"})
-    	public ResponseEntity<String> register(@RequestBody RegisterDto registerDto) {
-        	return new ResponseEntity<>(authService.register(registerDto), HttpStatus.CREATED);
+    	@PutMapping(value = {"/checkin/{id}"})
+    	public ResponseEntity<String> register(@RequestBody NewOrderDto newOrderDto
+                                               @PathVariable long id) {
+		CheckinOrderDto checkinOrderDto = ProductCheckinService.findOrderById(id)
+	                .orElseThrow(() -> new ResourceNotFoundException(notFoundMessage));
+		CheckinOrderDto checkinOrderDto = ProductCheckinService.UpdateOrderByNewOrder(id, newOrderDto);
+        	return new ResponseEntity<>(checkinOrderDto, HttpStatus.ok);
     	}
 ```
 - ProductCheckoutService
