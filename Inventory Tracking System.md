@@ -217,6 +217,9 @@
 ## self intro
 ### Hi, my name is Henry. Thank you for taking time to interview me. I am an experienced software engineer with around 6 years of professional experience in developing Java based web application. I have solid knowledge on core java and java 8 new features and familiar with all spring framework including spring MVC, springboot, spring data JPA, etc. As a experienced backend java developer, my core job duties is driving complex, large-scale technical projects covering software architecture design, maintainance and optimized database connection and network development. I also have fullstack experience in part of my previous projects which implemented front-end view engine using angular and built cloud service environment using AWS.I have satisfied performance of collaboration in agile scrum team and ability of identfiying and solving problem independently. I have confidence to handle this positon well in the future. Thank you.
 ## what was your responsibility in project
+### As a back-end java developer, My responsibility in project is:
+- 1. identify product features with team manager
+  2. fdfas 
 ## project architecture
 ## what's your daily work
 ## how did you deploy application
