@@ -214,9 +214,9 @@
 - Use tokens for authorization: Use JSON Web Tokens (JWT) to implement authorization in this application. When a user logs in, my authentication service should generate a JWT and return it to the client. The client can then include this token in subsequent API requests to authenticate the user and authorize access to protected resources.
 - Lazy loading: Lazy loading is a technique used to load only the required code for a specific route, instead of loading the entire application upfront. I apply it to reduce the initial loading time and improve the perceived performance of your application.
 - Minimize HTTP requests: Minimizing the number of HTTP requests required to load my application can significantly improve the performance of your application. I achieved this by concatenating and minifying my CSS and JavaScript files, using a CDN, and caching resources.
-### self intro
-# Hi, my name is Henry. Thank you for taking time to interview me. I am an experienced software engineer with around 6 years of professional experience in developing Java based web application. I have solid knowledge on core java and java 8 new feature and familiar with all spring framework including spring MVC, springboot, spring data JPA, etc. As a experienced backend java developer, my core job duties is driving complex, large-scale technical projects covering software architecture design, maintainance and optimized database connection and network development. I also hava fullstack experience in part of my previous projects like implementing front-end view engine using angular and building  cloud service environment like AWS.I have satisfied performance of collaboration in agile scrum team and ability of identfiying and solving problem independently. I have confidence to handle this positon well in the future. Thank you.
-### what was your responsibility in project
-### project architecture
-### what's your daily work
-### how did you deploy application
+## self intro
+### Hi, my name is Henry. Thank you for taking time to interview me. I am an experienced software engineer with around 6 years of professional experience in developing Java based web application. I have solid knowledge on core java and java 8 new feature and familiar with all spring framework including spring MVC, springboot, spring data JPA, etc. As a experienced backend java developer, my core job duties is driving complex, large-scale technical projects covering software architecture design, maintainance and optimized database connection and network development. I also hava fullstack experience in part of my previous projects like implementing front-end view engine using angular and building  cloud service environment like AWS.I have satisfied performance of collaboration in agile scrum team and ability of identfiying and solving problem independently. I have confidence to handle this positon well in the future. Thank you.
+## what was your responsibility in project
+## project architecture
+## what's your daily work
+## how did you deploy application
