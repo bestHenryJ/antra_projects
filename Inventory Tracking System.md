@@ -159,7 +159,7 @@
 - backend developer (database, spring mvc，ORM(Hibernate))
 - de-ops (CI/CD)
 ## Design a ci/cd pipeline flow to (AWS / local) depends on your resume project(if you want to keep AWS)
-- tool: Jenkins
+- tools: Jenkins
 - source reviewer
 - configure git hook/git merge 
 - build
@@ -175,7 +175,18 @@
 - deploy
   - AWS
 ## monitor in project
-
+- tools: Retrace APM
+- application availability
+  - make a simple http ping monitor that runs every minute which is a heartbeat detection for every http status.
+  - also it allow to check specifying text for the part of response.
+- application errors
+  - on the error monitoring dashboard, I could check the error rate being too high about page load time and find out the top Errors or Exception log in that period time.
+- important web request or key transactions
+  - for my microservice application, QAservice send high-volume api request to inventoryManagementService. Through monitor the average response time, error rate, requests per minute to analysis the satisfaction score
+- application dependencies (SQL, MongoDB, Redis, etc)
+  - Through monitor the external web service like SQL or redis to target the issue for response slowing down or some part is not working well.
+- web application metrics
+  - received log messages per minute, correlate things like server CPU, request per second and other metrics to monitor the application perfermance.
 ## daily user / TPS / QPS
 - max-connections + accept-count
 - tools: Jmeter
