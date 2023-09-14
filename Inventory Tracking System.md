@@ -128,8 +128,9 @@
   - create queue(topic 5) between QualityControlService and InventoryManagementService
   - create queue(topic 6) between InventoryManagementService and InventoryTransferService
 ## biggest challenge(technical challenge)
-- speed up retrieval in database layer:
-  - set up index and change execution plan
+- Optimized data retrieval and storage.
+  - For example, quailtyControlService frequently visits products_table to operate data validation. Frequent queries slow down api response. 
+  - set up index and change execution plan 
 - debug and maintain microservice:
   - Implement microservice component automate is kind of difficult. For each component we must follow the stages of Build, Deploy and, Monitor. Debugging is difficult to find out each service for an error. It is essential to maintain centralized logging and dashboards to debug problems.
 ## Aws
