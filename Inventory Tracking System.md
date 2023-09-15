@@ -253,10 +253,11 @@
 - meeting with frontend developer or leader
 - retrospective meeting when sprint is ending.
 ## how did you deploy application
-- User instances deploy on AWS cloudFront CDN
-- object store in Amazon S3
-- configue the Kubernetes cluster with docker containers running microservices on Amazon ECS
-- API gateway + Route53 to organize restful api
-- SQS + SNS to manage message transport
-- Data cached by ElastiCache
-- configue database on RDS or DynamoDB.
+- I deployed inventory tracking system in AWS:
+ 	- User instances deploy on AWS cloudFront CDN
+	- object store in Amazon S3
+	- configue the Kubernetes cluster with docker containers running microservices on Amazon ECS
+	- API gateway + Route53 to organize restful api
+	- SQS + SNS to manage message transport
+	- Data cached by ElastiCache
+	- configue database on RDS or DynamoDB.
