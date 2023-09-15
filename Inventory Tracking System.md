@@ -140,9 +140,11 @@
   - For example, implemented unique global transcation ID to tracing the error in microservice component's log.
 ## Aws
 - EC2: configure cpu, memory storage and OS.
+- Amazon ECS
 - S3: store amount of products' information like photo or video.
 - route53: like DNS to parse the url to ip address
 - API gateway: routing the message to send to the right service.
+- SQS + SNS
 - RDS: deploy Oracle database in RDS
 ## Prepare stories based on your resume: example,  where did you use multi-threading in your last project? Where did you use builder design patterns in your last project?
 - multi-threading:
