@@ -159,7 +159,7 @@
 - backend developer (database, spring mvc，ORM(Hibernate))
 - de-ops (CI/CD)
 ## Design a ci/cd pipeline flow to (AWS / local) depends on your resume project(if you want to keep AWS)
-- tools: Jenkins
+- tools: Amazon ECR
 - source reviewer
 - configure git hook/git merge 
 - build
@@ -224,5 +224,27 @@
 4. have good communication with front-end engineer and team manager to adjust the api design and features timely.
 5. release new features and retrospective.
 ## project architecture
+- Inventory Tracking System is a microservice based single page application.
+- 5 layers to design architecture for this project:
+- presentation layer: UI components/ UI process using angular to implement.
+- Business layer: ProductsChectinService, ProductsCheckoutService, OrderValidationService, InventoryManangmentService, ProductsInverntoryService, InverntoryTransferService, PaymentService, Exception Handling, log monitor, utilities use spring MVC, springboot to lmplement.
+- network transport layer: restful API, Http, https.
+- Data access layer: data access components, service register, service gateway like API gateway, Eureka, spring data JPA
+- Data Layser: database, SQL queries, stored procedures using Oracle
+- for each service:
+  - ProductsChectinService: get request from front-end supplier input, process supplier order, send reqest to OrderValidationService and response to frontend
+  - ProductsCheckoutService:get request from front-end consumer input, process consumer order, send reqest to OrderValidationService and response to frontend.
+  - OrderValidationService: valiate the order infomation and generate valid order and return order, response to checkin service and checkout service.
+  - InventoryManangmentService: process order, completed product add in and out.
+  - ProductsInverntoryService: product inventory analysis and create report.
+  - InverntoryTransferService: product transfer between different warehouse.
+  - PaymentService: payment process and invoice.
 ## what's your daily work
 ## how did you deploy application
+- User instances deploy on AWS cloudFront CDN
+- object store in Amazon S3
+- configue the Kubernetes cluster with docker containers running microservices on Amazon ECS
+- API gateway + Route53 to organize restful api
+- SQS + SNS to manage message transport
+- Data cached by ElastiCache
+- configue database on RDS or DynamoDB.
