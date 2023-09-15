@@ -148,9 +148,11 @@
 - RDS: deploy Oracle database in RDS
 ## Prepare stories based on your resume: example,  where did you use multi-threading in your last project? Where did you use builder design patterns in your last project?
 - multi-threading:
-  - I used it when I used restTemple API to call differet microservice and need the response to return to the user. It could extremely reduce the response time and improve recource usage rate.
+  - eg. when ProductInventoryService need to call OrderValidationService and InventoryManagementService and use their response's data to generate new request, I need to appliy multi-theading.
+  - I use Executors to create completableFuture thread pool and asynchronized send restful api to other services, then collecting their response to generate new instance, It could extremely reduce the response time and improve recource usage rate.
 - builder design patterns:
-  - I can use this pattern to build the response entity object when we use ResponseEntity in RestControllers. If the response entity has more parameters, the builder pattern can be used to avoid using telescopic constructors. Here I created a response entity class which is called ApiResponse and I will use the builder pattern to create this class.
+  - eg. Response entity has more parameters and parameters are generate dynamicly or response entity will be created by multi steps.
+  - the builder pattern can be used to avoid using telescopic constructors. Here I created a response entity class which is called ApiResponse and I have used the builder pattern to create this class.
 - Implement JWT tokens:
   - use JWT tokens to implement user verification. Realize one time login and multi-times operation to improve user experience on response time and user security.
 ## Come up team size(if you are the leader, how many people do you need and their responsibilities)
