@@ -240,6 +240,13 @@
   - InverntoryTransferService: product transfer between different warehouse.
   - PaymentService: payment process and invoice.
 ## what's your daily work
+- sprint planning meeting: pull features or ticket from backlog
+- assign points to developers
+- stand up meeting
+- check new branch: design, coding, develop, test
+- clarify meetings with PM
+- meeting with frontend developer or leader
+- retrospective meeting when sprint is ending.
 ## how did you deploy application
 - User instances deploy on AWS cloudFront CDN
 - object store in Amazon S3
