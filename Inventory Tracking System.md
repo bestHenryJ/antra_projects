@@ -40,63 +40,63 @@
 
 
 ## rest api design (design 2 - 4 rest apis)
-- ProductCheckinService
+- ProductSupplierService
 ```
-    	@GetMapping(value = {"/supplier/{id}"})
-    	public ResponseEntity<?> getSupplier(@PathVariable long id) {
-		SupplierDto supplierDto = ProductCheckinService.findSupplierById(id)
+	@RequestMapping(value = "/suplier")
+    	@GetMapping(value = {"/member/{id}"})
+    	public ResponseEntity<?> getProducts(@PathVariable long id) {
+		List<ProductDto> supplierDto = ProductSupplierService.findProductBySupplierId(id)
 	                .orElseThrow(() -> new ResourceNotFoundException(notFoundMessage))
-        	return new ResponseEntity<?>(supplierDto, Http.status.ok);
+        	return new ResponseEntity<?>(List<ProductDto>, Http.status.ok);
     	}
 ```
 ```
-    	@PutMapping(value = {"/checkin/{id}"})
-    	public ResponseEntity<String> register(@RequestBody NewOrderDto newOrderDto
-                                               @PathVariable long id) {
-		CheckinOrderDto checkinOrderDto = ProductCheckinService.findOrderById(id)
-	                .orElseThrow(() -> new ResourceNotFoundException(notFoundMessage));
-		CheckinOrderDto checkinOrderDto = ProductCheckinService.UpdateOrderByNewOrder(id, newOrderDto);
-        	return new ResponseEntity<>(checkinOrderDto, HttpStatus.ok);
+    	@PostMapping(value = {"/product"})
+    	public ResponseEntity<String> addProducts(@RequestBody ProductDto newProductDto) {
+		ProductCheckinService.addProduct(newProductDto);
+        	return new ResponseEntity<>("Product add successfully !", HttpStatus.CREATED);
     	}
 ```
-- ProductCheckoutService
+- ProductConsumerService
 ```
-    	@PostMapping("/checkout/order")
-    	public ResponseEntity<?> createCheckoutOrder(@RequestBody CheckoutOrderDto checkoutOrderDto) {
-        	return new ResponseEntity<>(ProductCheckoutService.createOrder(checkoutOrderDto), HttpStatus.CREATED);
+	@RequestMapping("/cosumer")
+    	@PostMapping("/order")
+    	public ResponseEntity<?> createOrder(@RequestBody OrderDto orderDto) {
+        	return new ResponseEntity<>(ProductCosumerService.createOrder(orderDto), HttpStatus.CREATED);
     	}
 ```
 ```
-	@DeleteMapping("/checkout/order/{id}")
-    	public ResponseEntity<String> deleteCheckoutOrderById(@PathVariable(name = "id") long id){
-        	ProductCheckoutService.deleteOrderById(id);
-        	return new ResponseEntity<>("Successful delete", HttpStatus.OK);
+	@GetMapping("/Product/{name}")
+    	public ResponseEntity<?> getProductByName(@PathVariable String name){
+        	List<ProductDto> supplierDto = ProductSupplierService.findProductByName(name)
+	                .orElseThrow(() -> new ResourceNotFoundException(notFoundMessage))
+        	return new ResponseEntity<>(List<ProductDto>, HttpStatus.OK);
     }
 ```
 - InventoryManagementService
 ```
-	@GetMapping(value = "/inverntory/products/{id}")
+	@GetMapping(value = "/inverntory/products")
 	public ResponseEntity<?> findProducts(@PathVariable long id) {
-	        String notFoundMessage = getNotFoundMessage(id);
-	        ProductDto productDto = inventoryService.findProductsById(id, order)
+	        List<ProductDto> productDto = inventoryService.findAllProducts()
 	                .orElseThrow(() -> new ResourceNotFoundException(notFoundMessage));
-		return new ResponseEntity<?>(productDto, Http.status.Ok);
+		return new ResponseEntity<?>(List<ProductDto>, Http.status.Ok);
 	}
 ```
 ```
-	@GetMapping(value = "/inverntory/employee/{name}")
-	public ResponseEntity<EmployeeDto> findEmployee(@PathVariable String name) {
-	        String notFoundMessage = getNotFoundMessage(name);
-	        EmployeeDto employeeDto = inventoryService.findEmployeeByName(name)
-	                .orElseThrow(() -> new ResourceNotFoundException(notFoundMessage));
-		return new ResponseEntity<?>(employeeDto, Http.status.Ok);
+	@PutMapping(value = "/inverntory/product/{id}")
+	public ResponseEntity<?> updateProduct(@PathVariable Long id
+                                              @RequestBody ProductDto productDto) {
+		ProductDto product = inventoryService.findProductById(id)
+	                .orElseThrow(() -> new ResourceNotFoundException(notFoundMessage))
+	        ProductDto newProductDto = inventoryService.updateProductById(id, productDto)
+		return new ResponseEntity<?>(newProductDto, Http.status.Ok);
 	}
 ```
 ```
-	@PutMapping(value = "/inverntory/order")
-	public ResponseEntity<String> updateInventoryProducts(@RequestBody OrderDto order) {
-	        inventoryService.updateProductsByOrder(order);
-	        return new ResponseEntity<>("Successful update", HttpStatus.OK);
+	@DeleteMapping(value = "/inverntory/product/{id}")
+	public ResponseEntity<String> deleteProduct(@PathVariable Long id) {
+	        inventoryService.deleteProductsById(id);
+	        return new ResponseEntity<>("delete product successfully", HttpStatus.OK);
 	}
 ```
 ## Data flow, prepare 2 - 3 data flow diagram (example: when user client some buttons to upload some files, what happens next, how does request go through your services)
