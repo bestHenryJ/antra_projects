@@ -103,17 +103,20 @@
 
 ### Supplier
 
-![supplier](https://github.com/bestHenryJ/antra_projects/assets/130790693/78958946-6a9f-4545-9ab6-93d46cabd766)
+![image](https://github.com/bestHenryJ/antra_projects/assets/130790693/5b9964a8-dfa3-4fc5-8307-73011f24471e)
+
 
 
 ### Consumer
 
-![consumer](https://github.com/bestHenryJ/antra_projects/assets/130790693/45d3e663-43d2-400f-91dc-ab410cf9fe50)
+![image](https://github.com/bestHenryJ/antra_projects/assets/130790693/854a4dc7-c8b2-4566-8eb4-a5d35086c545)
+
 
 
 ### Employee
 
-![employee](https://github.com/bestHenryJ/antra_projects/assets/130790693/81487315-3f25-4728-957d-22d543cf1203)
+![image](https://github.com/bestHenryJ/antra_projects/assets/130790693/536c6327-1af2-48a9-b412-8c8c280a89fd)
+
 
 
 ## message queue
