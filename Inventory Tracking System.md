@@ -139,10 +139,20 @@
   - create queue(topic 5) between QualityControlService and InventoryManagementService
   - create queue(topic 6) between InventoryManagementService and InventoryTransferService
 ## biggest challenge(technical challenge)
-- Optimized data retrieval and storage.
-  - For example, quailtyControlService frequently visits products_table to operate data validation. Frequent queries slow down api response. 
-  - set up index and change execution plan (change to hash_map storage) to speed up the query.
-  - data catche: used LRU strategy to store most frequnt data in catche to reduce the visit rate on products_table.
+- optimized feign invoke
+  - feign use URLconnection as default which not support connection pool. when amount requests between microservice is increasing, it will also increase the cost of connection build and destory. eg. orderValidationService frequently send request to inventroyManagementService for sending the order and obtaining products list.
+  - feign log level better to set basic or none to reducing cost.
+```
+feign:
+   client:
+     config:
+	default:
+            loggerLevel: BASIC
+   httpclient:
+	enabled: true
+	max-connections: 200
+	max-connections-per-route:50
+```
 - debug and maintain microservice:
   - Implement microservice component automate is kind of difficult. For each component we must follow the stages of Build, Deploy and, Monitor. Debugging is difficult to find out each service for an error. It is essential to maintain centralized logging and dashboards to debug problems.
   - For example, implemented unique global transcation ID to tracing the error in microservice component's log.
