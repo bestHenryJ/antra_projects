@@ -8,10 +8,12 @@
 - persistent archiving
 - simple use
 ### Functionalities
-- register
-- login/logout
+- register/login/logout
+- products transfer between warehouse
 - retrieval products
-- create orders
+- product replenishment by supplier
+- product delivery by consumer
+- product validation
 - products management(CRUD)
 - balance inventory
 - generate report
