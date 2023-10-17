@@ -146,8 +146,9 @@
   - For example, implemented unique global transcation ID to tracing the error in microservice component's log.
 ## Aws
 - EC2: configure cpu, memory storage and OS.
-- Amazon ECS
-- S3: store amount of products' information like photo or video.
+- cloudfront: speed up the user access
+- Amazon ECS: same as kubernetes
+- S3: store objects and amount of products' information like photo or video, deployed angular application in S3
 - route53: like DNS to parse the url to ip address
 - API gateway: routing the message to send to the right service.
 - SQS + SNS
