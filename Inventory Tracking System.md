@@ -155,7 +155,7 @@ feign:
 ```
 - debug and maintain microservice:
   - Implement microservice component automate is kind of difficult. For each component we must follow the stages of Build, Deploy and, Monitor. Debugging is difficult to find out each service for an error. It is essential to maintain centralized logging and dashboards to debug problems.
-  - For example, implemented unique global transcation ID to tracing the error in microservice component's log.
+  - For example, use zipkin & sleuth to centralize tracing in microservice.
 ## Aws
 - EC2: configure cpu, memory storage and OS.
 - cloudfront: speed up the user access
