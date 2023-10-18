@@ -182,7 +182,7 @@ feign:
 - backend developer (database, spring mvc，ORM(Hibernate))
 - de-ops (CI/CD)
 ## Design a ci/cd pipeline flow to (AWS / local) depends on your resume project(if you want to keep AWS)
-- tools: Amazon ECR
+- tools: Jenkins
 - source reviewer
 - configure git hook/git merge 
 - build
@@ -198,7 +198,7 @@ feign:
 - deploy
   - AWS
 ## monitor in project
-- tools: Retrace APM
+- tools: cloudwatch.
 - application availability
   - make a simple http ping monitor that runs every minute which is a heartbeat detection for every http status.
   - also it allow to check specifying text for the part of response.
@@ -274,9 +274,9 @@ feign:
 ## how did you deploy application
 - I deployed inventory tracking system in AWS:
  	- User instances deploy on AWS cloudFront CDN
-	- object store in Amazon S3
-	- configue the Kubernetes cluster with docker containers running microservices on Amazon ECS
-	- API gateway + Route53 to organize restful api
+	- frontend app in Amazon S3
+	- running microservices on Amazon ECS
 	- SQS + SNS to manage message transport
 	- Data cached by ElastiCache
-	- configue database on RDS or DynamoDB.
+   	- monitor microservice perfermance use cloudwatch
+	- configue database on RDS.
